@@ -1,0 +1,58 @@
+<div class="section-full p-t90 p-b50 bg-white">
+
+    <div class="container">
+        <div class="section-content">
+            <div class="row justify-content-center d-flex">
+            
+                <div class="col-xl-8 col-lg-7 col-md-12 m-b30">
+                    <div class="team-carousel-wraper">
+                        <div class="owl-carousel team-carousel owl-btn-bottom-left">
+                                
+                            <div class="item" *ngFor="let object of data.members">
+                                
+                                <div class="wt-team-2">
+                                
+                                    <div class="wt-media">
+                                        <img src="{{object.image}}" alt="">
+                                        <div class="team-social-center">
+                                            <ul class="team-social-icon">
+                                                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+                                                <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest"></i></a></li>
+                                            </ul>
+                                        </div>                                                
+                                    </div>                                   
+
+                                    <div class="wt-info">
+                                        <div class="team-detail  text-center">
+                                            <h3 class="m-t0 m-b15"><a routerLink="/our-team-detail">{{object.name}}</a></h3>
+                                            <p>{{object.designation}}</p>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>    
+
+                <div class="col-xl-4 col-lg-5 col-md-12 m-b30">
+                    <!-- TITLE START-->
+                    <div class="section-head left wt-small-separator-outer">
+                        <div class="wt-small-separator site-text-primary">
+                        <div>{{data.title}}</div>                                
+                        </div>
+                        <h2 class="wt-title">{{data.subtitle}}</h2>
+                        <p>{{data.descripton}}</p>
+                        <a routerLink="/our-team" class="site-button site-btn-effect">View All</a>
+                    </div>                  
+                    <!-- TITLE END-->
+                </div>                        
+            </div>      
+        </div>    
+    </div>
+
+</div>

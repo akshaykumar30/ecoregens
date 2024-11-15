@@ -1,0 +1,52 @@
+<div class="section-full p-t80 p-b70 bg-gray what-we-do-section">
+            
+    <div class="container">                      
+        <div class="section-content what-we-do-content">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="whatWedo-media-section">
+                        <div class="wt-media">
+                            <img src="{{data.image}}" alt="">
+                        </div>
+                        <div class="whatWedo-media-content text-white">
+                            <div class="whatWedo-media-inner">
+                                <h3>{{data.experience.title}}</h3>
+                                <p>{{data.experience.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                                   
+                <div class="col-lg-6 col-md-12">
+                    <div class="whatWedo-info-section">
+                        <!-- TITLE START-->
+                        <div class="left wt-small-separator-outer">
+                            <div class="wt-small-separator site-text-primary">
+                                <div  class="sep-leaf-left"></div>
+                                <div>{{data.title}}</div>
+                                <div  class="sep-leaf-right"></div>
+                            </div>
+                            <h2>{{data.subtitle}}</h2>
+                            <p>{{data.description}}</p>
+                            
+                        </div>
+                        <!-- TITLE END-->
+                        <div class="wt-icon-card-outer">
+                            <div class="wt-icon-card bg-white shadow" *ngFor="let object of data.work">
+                                <div class="wt-card-header"><i class="{{object.icon}} site-text-primary"></i><span class="title-style-2 site-text-secondry">{{object.title}}</span></div>
+                                <div class="wt-card-content"><p>{{object.description}}</p></div>
+                            </div>
+                        </div>
+                                                            
+                    </div>                        
+                </div> 
+            
+
+            </div>
+        </div>                                        
+    </div>
+    <div class="hilite-large-title title-style-2">
+        <span>{{data.title}}</span>
+    </div>
+    
+</div> 

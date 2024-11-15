@@ -1,0 +1,31 @@
+<div class="page-wraper"> 
+    
+    <!-- HEADER START -->
+    <app-section-header2></app-section-header2>
+    <!-- HEADER END -->
+    
+    <!-- CONTENT START -->
+    <div class="page-content">
+    
+        <!-- INNER PAGE BANNER -->
+        <app-section-inner-banner [data]="banner"></app-section-inner-banner>
+        <!-- INNER PAGE BANNER END -->
+
+        <!-- GALLERY SECTION START -->
+        <app-section-gallery2 [data]="projects1"></app-section-gallery2>  
+        <!-- GALLERY SECTION END -->     
+
+        <!-- GALLERY SECTION START -->
+        <app-section-gallery1 [data]="projects2"></app-section-gallery1>  
+        <!-- GALLERY SECTION END -->
+        
+    </div>
+    <!-- CONTENT END -->
+    
+    <!-- FOOTER START -->
+    <app-section-footer1></app-section-footer1>
+    <!-- FOOTER END -->
+    
+</div>
+
+<app-loader></app-loader>

@@ -1,0 +1,72 @@
+<div class="section-full video2-counter-section p-t80 p-b40  overlay-wraper bg-cover bg-no-repeat" style="background-image:url(assets/images/background/bg-2.jpg);">
+    <div class="overlay-main bg-black opacity-09"></div>                                       
+
+            <div class="container">
+                <!-- TITLE START-->
+                <div class="section-head center wt-small-separator-outer text-center text-white">
+                    <div class="wt-small-separator site-text-primary">
+                        <div  class="sep-leaf-left"></div>
+                        <div>{{data.title}}</div>
+                        <div  class="sep-leaf-right"></div>
+                    </div>
+                    <h2>{{data.subtitle}}</h2>
+                </div>
+                <!-- TITLE END--> 
+
+                <div class="counter2-section-outer-top">
+        
+                        
+                        <div class="row justify-content-center">
+                                
+                            <div class="col-lg-5 col-md-12 m-b30 ">
+                                <div class="video2-section-info bg-white site-text-secondry">
+                                    <h3 class="wt-tilte site-text-secondry">{{data.description.title}}</h3>
+                                    <p>{{data.description.subtitle}}</p>
+                                    <a routerLink="/services/s-power-energy" class="site-button-link">Read More</a>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-7 col-md-12 m-b30">
+                            
+                                <div class="video-section2-outer mfp-gallery">
+                                    <div class="video-section">
+                                        <a href="{{data.videolink}}" class="mfp-video play-now">
+                                            <i class="icon fa fa-play"></i>
+                                            <span class="ripple"></span>
+                                        </a>                                              
+                                    </div>	    
+                                </div>                                            
+                                <div class="video-section-blockquote">
+                                    <i class="fa fa-quote-left"></i>
+                                    <span class="q-author-detail site-text-white title-style-2">{{data.description.quote}}</span>
+                                    <div class="q-author-name site-text-primary title-style-2">{{data.description.quoteby}}</div>
+                                </div>
+                                
+                            </div>
+                            
+                            
+
+                        </div>                            
+
+                </div>  
+                
+                <div class="counter2-section-outer-bottom">
+                    <div class="counter-outer">                            
+                        
+                        <div class="row justify-content-center">
+                                
+                            <div class="col-lg-3 col-md-6 col-sm-6 m-b30" *ngFor="let object of data.solutions">
+                                <div class="wt-icon-box-wraper center">
+                                    <h2 class="counter site-text-primary">{{object.count}}</h2>
+                                    <span class="site-text-white title-style-2">{{object.title}}</span>
+                                </div>
+                            </div>
+                            
+                        </div>                            
+                    
+                    </div>   
+                </div>  
+                                                                            
+        </div>
+
+        </div>

@@ -1,0 +1,33 @@
+<div class="section-full bg-white p-t80 p-b50">
+
+    <div class="container">
+    
+        <!-- IMAGE CAROUSEL START -->
+        <div class="section-content clearfix">
+            <div class="top-half2-section">
+            
+                <div class="row d-flex justify-content-center">
+                
+                    <div class="col-lg-4 col-md-6 animate_line" *ngFor="let object of data">
+                        <div class="service-border-box3 shadow">
+                            <div class="wt-icon-box-wraper bg-white p-tb50 p-lr20">
+                                <div class="icon-lg inline-icon	 m-b50 text-left">
+                                    <span class="icon-cell site-text-primary"><i class="{{object.icon}}"></i></span>
+                                </div>
+                                <div class="icon-content bold-title">
+                                    <h3 attr.data-title="{{object.count}}" class="wt-tilte m-b20">{{object.title}}</h3>
+                                    <p>{{object.subtitle}}</p>
+                                    <a routerLink="/products/product-detail" class="site-button-link">More Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                                                            
+                    </div>
+                                                                                                              
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+ </div>

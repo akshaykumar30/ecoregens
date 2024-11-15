@@ -1,0 +1,41 @@
+<div class="page-wraper"> 
+    
+    <!-- HEADER START -->
+    <app-section-header2></app-section-header2>
+    <!-- HEADER END -->
+    
+    <!-- CONTENT START -->
+    <div class="page-content">
+    
+        <!-- INNER PAGE BANNER -->
+        <app-section-inner-banner [data]="banner"></app-section-inner-banner>
+        <!-- INNER PAGE BANNER END -->
+        
+        <div class="section-full p-t80 p-b50">
+            <div class="container">
+                <div class="section-content">
+                    <div class="wt-box">
+                        <div class="icon-font row d-flex justify-content-center flex-wrap">
+                        
+                                <div class="col-md-3 col-sm-6 m-b30" *ngFor="let object of fonts">
+                                    <div class="icon-font-block"><div class="flat-icon {{object}}"></div>
+                                    <div class="class-name">.{{object}}</div>
+                                </div>
+                                </div>        
+                                
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        
+    </div>
+    <!-- CONTENT END -->
+    
+    <!-- FOOTER START -->
+    <app-section-footer1></app-section-footer1>
+    <!-- FOOTER END -->
+    
+</div>
+
+<app-loader></app-loader>

@@ -1,0 +1,72 @@
+<div class="row m-b30">
+    <div class="col-lg-3 col-md-4 m-b30">
+        <div class="wt-box wt-product-gallery on-show-slider"> 
+            
+            <div id="sync1" class="owl-carousel owl-theme owl-btn-vertical-center m-b5">
+                <div class="item" *ngFor="let object of data.images">
+                    <div class="mfp-gallery">
+                        <div class="wt-box">
+                            <div class="wt-thum-bx wt-img-overlay1 ">
+                                <img src="{{object}}" alt="">
+                                <div class="overlay-bx">
+                                    <div class="overlay-icon">
+                                        <a class="mfp-link" href="{{object}}">
+                                            <i class="fa fa-arrows-alt wt-icon-box-xs"></i>
+                                        </a>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="sync2" class="owl-carousel owl-theme">
+                <div class="item" *ngFor="let object of data.imageThumbs">
+                    <div class="wt-media">
+                        <img src="{{object}}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-9 col-md-8">
+        <div class="product-detail-info bg-gray p-a30">
+            <div class="wt-product-title ">
+                <h2 class="post-title"><a>{{data.title}}</a></h2>
+            </div>
+            <h3 class="m-tb10">${{data.price}} </h3>
+            
+            <div class="m-b15">
+                <span class="rating-bx">
+                 <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </span>
+                <span class="font-weight-600 text-black">({{data.ratings}} customer reviews)</span>
+            </div>
+                    
+            <div class="wt-product-text">
+                <p>{{data.description}}</p> 
+            </div>
+            <form method="post" class="cart clearfix ">
+                <div class="quantity btn-quantity m-b20">
+                    <input id="demo_vertical2" type="text" value="1" name="demo_vertical2"/>
+                </div>
+                <button class="site-button-secondry m-r10 site-btn-effect m-b20"><i class="fa fa-shopping-bag"></i> Buy Now</button>
+                <button class="site-button site-btn-effect m-b20"><i class="fa fa-cart-plus"></i>Add to Cart</button>
+            </form>
+            <div class="product_meta"> 
+                <span class="sku_wrapper">SKU: 
+                    <span class="sku">{{data.sku}}</span>
+                </span> 
+                <span class="posted_in">Categories: 
+                    <a *ngFor="let object of data.categories; let i = index;" routerLink="/products/product" rel="tag">{{i!=0 ? ',' : ''}}{{object}}</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

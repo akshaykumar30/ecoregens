@@ -1,0 +1,93 @@
+<div class="page-wraper"> 
+    
+    <!-- HEADER START -->
+    <app-section-header2></app-section-header2>
+    <!-- HEADER END -->
+    
+     <!-- CONTENT START -->
+    <div class="page-content">
+    
+        <!-- INNER PAGE BANNER -->
+        <app-section-inner-banner [data]="banner"></app-section-inner-banner>
+        <!-- INNER PAGE BANNER END -->
+        
+        <!-- SECTION CONTENT START -->
+        <div class="section-full p-t80 p-b80">
+        
+            <!-- PRODUCT DETAILS -->
+            <div class="container woo-entry">
+            
+                <app-section-product-detail [data]="details"></app-section-product-detail>
+                    
+                <!-- TABS CONTENT START -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="wt-tabs border bg-tabs">
+                            <ul class="nav nav-tabs">
+                                <li><a data-toggle="tab" href="#web-design-19" class="active">Description</a></li>
+                                <li><a data-toggle="tab" href="#graphic-design-19">Specification</a></li>
+                                <li><a data-toggle="tab" href="#developement-19">Review</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="web-design-19" class="tab-pane active">
+                                    <div class=" p-a10">
+                                        <p class="m-b10">Hundreds of thousands a still more glorious nights around art table Nov 28, 2019 Uncategorized Preserve and cherish that pale blue dot are creatures of the cosmos light years Nov 27, 2019 Uncategorized Great turbulent clouds hearts of the stars stirred by starlight sky culture</p>
+                                        
+                                        <ul class="site-list-style-two m-b0">
+                                            <li>Quality Control System , 100% Satisfaction Guarantee</li>
+                                            <li>Unrivalled Workmanship, Professional and Qualified</li>
+                                            <li>Environmental Sensitivity, Personalised Solutions</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="graphic-design-19" class="tab-pane">
+                                    <table class="table m-b0 no-border">
+                                        <tr>
+                                            <td><b>Size</b></td>
+                                            <td>Small, Medium, Large & Extra Large</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Color</b></td>
+                                            <td>Read, Blue, Green & Black</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Length</b></td>
+                                            <td>35 cm</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Fabric</b></td>
+                                            <td>Cotton, Silk & Synthetic</td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Warranty</b></td>
+                                            <td>6 Months</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <app-section-product-review  id="developement-19" class="tab-pane" [data]="reviews"></app-section-product-review>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- TABS CONTENT START -->
+                
+            </div>
+            <!-- PRODUCT DETAILS -->    
+                
+        </div>
+        <!-- CONTENT CONTENT END -->
+    
+        <!-- SECTION CONTENT START -->
+        <app-section-featured-products [data]="featured"></app-section-featured-products>
+        <!-- SECTION CONTENT END -->
+
+    </div>
+    <!-- CONTENT END -->
+
+    <!-- FOOTER START -->
+    <app-section-footer1></app-section-footer1>
+    <!-- FOOTER END -->
+    
+</div>
+
+<app-loader></app-loader>

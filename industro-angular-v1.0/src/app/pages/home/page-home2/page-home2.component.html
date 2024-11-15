@@ -1,0 +1,61 @@
+<div class="footer-fixed">
+    <div class="page-wraper"> 
+                
+        <!-- HEADER START -->
+        <app-section-header2></app-section-header2>
+        <!-- HEADER END -->
+        
+        <!-- CONTENT START -->
+        <div class="page-content">
+        
+        <!-- SLIDER START --> 
+            <app-section-slider2></app-section-slider2>
+            <!-- SLIDER END -->
+            
+            <!-- TOP HALF SECTION START -->
+            <app-section-specifications1 [data]="specifications"></app-section-specifications1>  
+            <!-- TOP HALF SECTION END -->
+            
+            <!-- PROJECTS SECTION START -->
+            <app-section-projects2 [data]="projects" overlay="1"></app-section-projects2>
+            <!-- PROJECTS SECTION  SECTION END -->             
+                            
+            <!-- ABOUT SECTION START -->
+            <app-section-about2 [data]="about"></app-section-about2>
+            <!-- ABOUT SECTION  SECTION END -->   
+
+            <!-- VIDEO SECTION START -->
+            <app-section-video2 [data]="video"></app-section-video2>
+            <!-- VIDEO SECTION  SECTION END -->              
+
+            <!-- CLIENT LOGO SECTION START -->
+            <app-section-clients1 [data]="clients"></app-section-clients1>
+            <!-- CLIENT LOGO  SECTION End -->   
+
+            <!-- TESTIMONIAL SECTION START -->
+            <app-section-testimonials2 [data]="testimonials"></app-section-testimonials2>
+            <!-- TESTIMONIAL SECTION END -->  
+            
+            <!-- OUR TEAM START -->
+            <app-section-team2 [data]="team" bgcover="0" grayBox="0"></app-section-team2>
+            <!-- OUR TEAM SECTION END --> 
+            
+            <!-- SELF INTRO SECTION START -->
+            <app-section-self-intro1 [data]="selfIntro"></app-section-self-intro1>
+            <!-- SELF INTRO SECTION  END -->          
+                        
+            <!-- OUR BLOG START -->
+            <app-section-blogs2 [data]="blogs"></app-section-blogs2>
+            <!-- OUR BLOG END -->
+    
+        </div>
+        <!-- CONTENT END -->
+        
+        <!-- FOOTER START -->
+        <app-section-footer2></app-section-footer2>
+        <!-- FOOTER END -->
+
+    </div>
+</div>
+
+<app-loader></app-loader>

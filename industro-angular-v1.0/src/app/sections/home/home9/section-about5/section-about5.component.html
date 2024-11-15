@@ -1,0 +1,70 @@
+<div class="section-full p-t80 p-b50 bg-no-repeat bg-center bg-white">
+    <div class="about-section-two">
+        <div class="container">
+            <div class="section-content">                 
+                <div class="row justify-content-center d-flex">
+                                        
+                    <div class="col-lg-6 col-md-12 m-b30">
+                        <div class="about-section-two-right">
+                            <!-- TITLE START-->
+                            <div class="left wt-small-separator-outer">
+                                <div class="wt-small-separator site-text-primary">
+                                    <div  class="sep-leaf-left"></div>
+                                    <div>{{data.title}}</div>
+                                    <div  class="sep-leaf-right"></div>
+                                </div>
+                                <h2>{{data.subtitle}}</h2>
+                                <div class="ab-two-info">
+                                    <p>
+                                        {{data.description1}}
+                                    </p>
+                                </div>
+                            </div>                                    
+                            <!-- TITLE END-->
+
+                        
+                            <div class="row ab-two-icon-section"> 
+                                <div class="col-lg-6 col-md-12" *ngFor="let object of data.specifications">
+                                    <div class="wt-icon-box-wraper center m-b30 bg-gray p-a20">
+                                        <span class="icon-md p-t10">
+                                            <i class="{{object.icon}} site-text-primary"></i>
+                                        </span>
+                                        <div class="icon-content">
+                                            <h3 class="wt-tilte">{{object.title}}</h3>
+                                            <p>{{object.subtitle}}</p>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+
+                            <div class="ab-two-info">
+                                <p>
+                                    {{data.description2}} 
+                                </p>
+                                <a routerLink="/about/about1" class="site-button-secondry site-btn-effect">Learn More</a>  
+                            </div>
+                                                        
+                        </div>
+                                                                        
+
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 m-b30">
+                        <div class="about-max-two">
+                            <div class="about-max-two-media"><img src="{{data.image}}" alt="" ></div>
+                            <div class="about-two">
+                                <div class="about-year">
+                                    <div class="about-year-info">
+                                        <span>{{data.experience}}</span>
+                                        <p>Years of Working Experience in this field</p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>                                 
+            </div>
+        </div> 
+    </div>
+    </div>
+</div>

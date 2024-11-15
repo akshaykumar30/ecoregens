@@ -1,0 +1,39 @@
+<div class="section-full welcome-section-outer">
+    <div class="welcome-section-top bg-white p-tb80">
+        <div class="container">
+            <div class="row">
+            
+                <div class="col-lg-6 col-md-12">
+                    <div class="img-colarge-new">
+                        <div class="colarge-1-new"><img src="{{data.image}}" alt="" class="slide-righ"></div>
+                    </div>
+                </div>  
+                                      
+                <div class="col-lg-6 col-md-12">
+                    <div class="welcom-to-section-new">
+                        <!-- TITLE START-->
+                        <div class="left wt-small-separator-outer">
+                            <div class="wt-small-separator site-text-primary">
+                                <div  class="sep-leaf-left"></div>
+                                <div>{{data.title}}</div>
+                                <div  class="sep-leaf-right"></div>
+                            </div>
+                        </div>
+                        <h2>{{data.subtitle}}</h2>
+                        <!-- TITLE END-->
+                        <ul class="site-list-style-one-new">
+                            <li *ngFor="let object of data.specifications">{{object}}</li>
+                        </ul>
+                        
+                        <p>{{data.description}}</p> 
+                        
+                        <div class="welcom-to-section-bottom d-flex justify-content-between">
+                            <div class="welcom-btn-position"><a routerLink="/about/about1" class="site-button-secondry site-btn-effect">More About</a></div>
+                        </div>   
+                    </div>
+                </div>
+
+            </div>
+        </div> 
+    </div>
+</div>

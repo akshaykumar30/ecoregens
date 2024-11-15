@@ -1,0 +1,60 @@
+<div class="section-full p-t80 p-b50 bg-no-repeat bg-bottom-left bg-white">
+    <div class="about-section-11">
+        <div class="container">
+            <div class="section-content">                 
+                <div class="row justify-content-center d-flex">
+                
+                    <div class="col-lg-6 col-md-12 m-b30 about-max-11-position">
+                        <div class="about-max-11">
+                            <div class="about-max-11-media"><img src="{{data.image}}" alt=""></div>
+                            <div class="ab-call-us">
+                                
+
+                                <div class="wt-icon-box-wraper left bg-white p-a30">
+                                    <div class="icon-xl text-primary radius">
+                                        <span class="icon-cell  site-text-primary"><i class="flaticon-call"></i></span>
+                                    </div>
+                                    <div class="icon-content">
+                                        <h3 class="wt-tilte text-uppercase">Call us anytime</h3>
+                                        <p>{{data.contact}}</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="col-lg-6 col-md-12 m-b30">
+                        <div class="about-section-11-right">
+                            <!-- TITLE START-->
+                            <div class="section-head left wt-small-separator-outer">
+                                <div class="wt-small-separator site-text-primary">
+                                    <div>{{data.title}}</div>
+                                </div>
+                                <h2>{{data.subtitle}}</h2>
+                            </div>
+                            <!-- TITLE END-->
+
+                            <div class="about-one">
+                                <p>
+                                    {{data.description1}}
+                                </p>
+                                <p>
+                                    {{data.description2}}
+                                </p>
+
+                            </div>
+
+                             <ul class="description-list p-b20">
+                                <li *ngFor="let object of data.specifications"><i class="fa fa-angle-right"></i> {{object}}</li>
+                            </ul>
+
+                            <a routerLink="/about/about1" class="site-button site-btn-effect">More About</a> 
+                       </div>
+                   </div>
+                                          
+               </div>
+            </div> 
+        </div>
+    </div>
+</div>

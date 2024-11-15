@@ -1,0 +1,56 @@
+<div class="section-full p-t80 p-b50 bg-white bg-bottom-center bg-repeat-x" style="background-image:url(assets/images/oil-gas/bg-1.png)">
+            
+    <div class="container">                      
+        <div class="section-content">
+            <div class="row d-flex justify-content-center flex-wrap">
+                <div class="col-lg-6 col-md-12 m-b30">
+
+                    <div class="arc-home-about-right masonry-wrap">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 masonry-item" *ngFor="let object of data.masonry">
+                                <div class="arc-about-year text-uppercase text-right m-b20">
+                                    <div class="arc-about-year-pic">
+                                        <img src="{{object}}" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>		
+                    </div>
+
+                </div> 
+                                   
+                <div class="col-lg-6 col-md-12 m-b40">
+                    <div class="whatWedo-info-section">
+                        <!-- TITLE START-->
+                        <div class="left wt-small-separator-outer">
+                            <div class="wt-small-separator site-text-primary">
+                                <div  class="sep-leaf-left"></div>
+                                <div>{{data.title}}</div>
+                                <div  class="sep-leaf-right"></div>
+                            </div>
+                            <h2>{{data.subtitle}}</h2>
+                            <p>{{data.description}}</p>
+                            
+                        </div>
+                        <!-- TITLE END-->
+                        
+                        <ul class="site-list-style-one">
+                            <li *ngFor="let object of data.work">{{object}}</li>
+                        </ul>
+                        
+                        <div class="welcom-to-section-bottom d-flex justify-content-between">
+                            <div class="welcom-btn-position"><a routerLink="/about/about1" class="site-button-secondry site-btn-effect">More About</a></div>
+                            <div class="welcom-sign-pic"><img src="{{data.sign}}" alt=""></div>
+                            <div class="welcom-sign-info"><strong>{{data.signBy}}</strong><span>{{data.designation}}</span></div>
+                        </div>                                    
+                                                            
+                    </div>                        
+                </div> 
+            
+
+            </div>
+        </div>                                        
+    </div>
+    
+    
+</div> 

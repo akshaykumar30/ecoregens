@@ -1,0 +1,26 @@
+<div class="box-style1-outer">
+    <div class="row d-flex justify-content-center no-gutters">
+    
+        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6" *ngFor="let object of data">
+            <div class="box-style1">
+                <div class="wt-box ">
+                    <div class="box-style1-title title-style-2">
+                        <span class="o-title-one">{{object.title1}}</span>
+                        <span class="o-title-two">{{object.title2}}</span>     
+                    </div>
+                    <div class="box-style1-content">
+                        <p>{{object.description}}</p>
+                        <a routerLink="/other/contact1" class="site-button-link">Read More</a>
+                    </div>
+                    <div class="wt-icon-box-wraper">
+                        <div class="wt-icon-box-md bg-gray">
+                            <span class="icon-cell site-text-primary"><img src="{{object.image}}" alt=""></span>
+                        </div>
+                        <div class="wt-icon-number"><span>{{object.count}}</span></div>
+                    </div>                                  
+                </div>
+            </div>
+        </div>                                                                                                   
+                                                                    
+    </div>
+</div>

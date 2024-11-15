@@ -1,0 +1,66 @@
+<div class="section-full p-t80 p-b50 bg-gray">
+    <div class="container">
+        <div class="section-content">
+           
+            <!-- TITLE START -->
+                <div class="wt-separator-two-part">
+                    <div class="row wt-separator-two-part-row">
+                        <div class="col-lg-8 col-md-6 wt-separator-two-part-left">
+                            <!-- TITLE START-->
+                            <div class="section-head left wt-small-separator-outer">
+                                <div class="wt-small-separator site-text-primary">
+                                    <div class="sep-leaf-left"></div>
+                                    <div>{{data.title}}</div>
+                                    <div class="sep-leaf-right"></div>
+                                </div>
+                                <h2>{{data.subtitle}}</h2>
+                            </div>
+                            <!-- TITLE END-->
+                        </div>
+                        <div class="col-lg-4 col-md-6 wt-separator-two-part-right text-right">
+                            <a routerLink="/products/product-detail" class="site-button site-btn-effect">More Detail</a>
+                        </div>
+                    </div>
+                </div>                        
+            
+            <!-- TITLE END -->
+        
+            <div class="owl-carousel featured-products owl-btn-vertical-center">
+                 
+            
+                <!-- COLUMNS 1 -->
+                <div class="item" *ngFor="let object of data.products">
+                    <div class="wt-box wt-product-box   overflow-hide">
+                        <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
+                            <img src="{{object.image}}" alt="">
+                            <div class="overlay-bx">
+                                <div class="overlay-icon">
+                                    <a routerLink="/products/shopping-cart">
+                                        <i class="fa fa-cart-plus wt-icon-box-xs"></i>
+                                    </a>
+                                    <a class="mfp-link" routerLink="/products/wish-list">
+                                        <i class="fa fa-heart wt-icon-box-xs"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wt-info  text-center">
+                             <div class="p-a20 bg-white">
+                                <h3 class="wt-title">
+                                    <a routerLink="/products/product-detail">{{object.title}}</a>
+                                </h3>
+                                <span class="price">                                                
+                                    <ins>
+                                        <span><span class="Price-currencySymbol">$ </span>{{object.price}}</span>
+                                    </ins>
+                                </span>
+                                
+                             </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>

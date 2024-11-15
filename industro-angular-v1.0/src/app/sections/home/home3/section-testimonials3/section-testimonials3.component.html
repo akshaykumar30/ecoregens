@@ -1,0 +1,43 @@
+<div class="section-full  p-t80 p-b50 bg-no-repeat {{data.bgClass}}" style="background-image:url({{data.bgImage}})">
+    <div class="container">
+
+        <!-- TITLE START-->
+        <div class="section-head center wt-small-separator-outer">
+            <div class="wt-small-separator site-text-primary">
+                <div  class="sep-leaf-left"></div>
+                <div>{{data.title}}</div>
+                <div  class="sep-leaf-right"></div>
+            </div>
+            <h2>{{data.subtitle}}</h2>
+        </div>
+        <!-- TITLE END-->
+        
+        <div class="testimonial-2-content-outer">
+            <div class="testimonial-3-content owl-carousel  owl-btn-vertical-center long-arrow-next-prev">
+                <div class="item" *ngFor="let object of data.quotes">
+                    <div class="testimonial-2 {{whiteBox=='1'?'bg-white':'bg-gray'}}">
+                        <div class="testimonial-content">
+                       
+                            <div class="testimonial-text">
+                                <i class="fa fa-quote-left"></i>
+                                <p>{{object.quote}}</p>
+                            </div>
+                            <div class="testimonial-detail clearfix">
+                                <div class="testimonial-pic-block"> 
+                                    <div class="testimonial-pic">
+                                        <img src="{{object.image}}" alt="">
+                                    </div>
+                                </div>                                                 
+                                <div class="testimonial-info">
+                                    <span class="testimonial-name  title-style-2 site-text-secondry">{{object.by}}</span>
+                                    <span class="testimonial-position title-style-2 site-text-primary">{{object.post}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                                                                                                           
+            </div>
+        </div> 
+
+    </div>
+</div>

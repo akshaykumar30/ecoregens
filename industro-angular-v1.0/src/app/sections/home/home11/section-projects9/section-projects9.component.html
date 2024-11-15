@@ -1,0 +1,46 @@
+<div class="section-full p-t90 p-b50 p-lr30 project-style-new ">
+
+    <div class="container">
+    
+        <!-- TITLE START-->
+        <div class="section-head center wt-small-separator-outer">
+            <div class="wt-small-separator site-text-primary">
+                <div>{{data.title}}</div>
+            </div>
+            <h2>{{data.subtitle}}</h2>
+        </div>
+        <!-- TITLE END-->
+
+    </div>
+
+    <!-- IMAGE CAROUSEL START -->
+    <div class="section-content">
+        <div class="container">
+            <div class="owl-carousel project-carousel  owl-btn-vertical-center m-b30">
+                <!-- COLUMNS 1 --> 
+                <div class="item" *ngFor="let object of data.projects">
+                    <div class="project-new-2">
+                        <div class="wt-img-effect">
+                            <img src="{{object.image}}" alt="">
+                            <div class="project-view">
+                                <a class="elem pic-long project-view-btn" href="{{object.image}}" title="{{object.title}}" 
+                                data-lcl-txt="" data-lcl-author="" data-lcl-thumb="{{object.image}}">
+                                <i class="fa fa-search-plus"></i>     
+                                </a> 
+                            </div> 
+                        </div>
+                        <div class="project-new-content2">
+                            <span class="project-new-category">{{object.type}}</span>	
+                            <h3 class="wt-title"><a routerLink="/projects/project-detail">{{object.title}}</a></h3>
+                            <p>{{object.description}}</p>
+                            <a routerLink="/services/service-detail" class="site-button-link site-text-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>                      
+
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
