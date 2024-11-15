@@ -1,0 +1,60 @@
+<div class=" p-a20 bg-gray">
+    <div id="comments">
+        <ol class="commentlist">
+            <li class="comment" *ngFor="let object of data">
+                <div class="comment_container">
+                    <img class="avatar avatar-60 photo" src="{{object.image}}" alt="">
+                    <div class="comment-text">
+                        <div  class="star-rating">
+                            <div data-rating='{{object.rating}}'>
+                                <i *ngFor="let n of [1,2,3,4,5]" class="fa {{object.rating >= n ? 'fa-star' : 'fa-star-o'}}" data-alt="{{n}}" title="regular"></i>
+                            </div>
+                        </div>
+                        <p class="meta">
+                            <strong class="author">{{object.name}}</strong>
+                            <span><i class="fa fa-clock-o"></i> {{object.date}}</span>
+                        </p>
+                        <div class="description">
+                            <p>{{object.review}}</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ol>
+    </div>
+
+    <div id="review_form_wrapper">
+        <div id="review_form">
+                <div id="respond" class="comment-respond">                                              
+                    <h3 class="comment-reply-title" id="reply-title">Add a review</h3>                                              
+                    <form class="comment-form" method="post" >                                                  
+                        <div class="comment-form-author">
+                            <label>Name <span class="required">*</span></label>
+                            <input type="text" aria-required="true" size="30" value="" name="author" id="author">
+                        </div>
+                        <div class="comment-form-email">
+                            <label>Email <span class="required">*</span></label>
+                            <input type="text" aria-required="true" size="30" value="" name="email" id="email">
+                        </div>                                                      
+                        <div class="comment-form-rating">
+                            <label>Your Rating</label>
+                            <div class='star-Rating-input'>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+                        </div>                                                      
+                        <div class="comment-form-comment">
+                            <label>Your Review</label>
+                            <textarea aria-required="true" rows="8" cols="45" name="comment" id="comment"></textarea>
+                        </div>
+                        <div class="form-submit">                                                       
+                            <button class="site-button site-btn-effect" type="submit">Submit</button>
+                        </div>                                                  
+                    </form>                                                 
+                </div>
+            </div>
+    </div>
+</div> 

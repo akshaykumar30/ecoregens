@@ -1,0 +1,47 @@
+<div class="section-full welcome-section-outer">
+    <div class="welcome-section-top bg-white p-tb80">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="img-colarge">
+                        <div class="colarge-1"><img src="{{data.image}}" alt="" class="slide-righ"></div>
+                        <div class="since-year-outer"><div class="since-year"><span></span><strong>{{data.since}}</strong></div></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="welcom-to-section">
+                        <!-- TITLE START-->
+                        <div class="left wt-small-separator-outer">
+                            <div class="wt-small-separator site-text-primary">
+                                <div  class="sep-leaf-left"></div>
+                                <div>{{data.title}}</div>
+                                <div  class="sep-leaf-right"></div>
+                            </div>
+                        </div>
+                        <h2>{{data.subtitle}}</h2>
+                        <!-- TITLE END-->
+                        <ul class="site-list-style-one">
+                            <li *ngFor="let service of data.services">{{service.value}}</li>
+                        </ul>
+
+                        <p>{{data.description}}</p>
+
+                        <h3>Our Mission </h3>
+                        <p>To provide sustainable, high-quality transformer oil regeneration solutions that enhance transformer efficiency, reduce operational costs, and support a greener future for the energy industry. Our Vision: To be the global leader in transformer oil regeneration technology, setting new benchmarks for innovation, quality, and environmental stewardship.</p>
+
+                        <h3>Our Values </h3>
+                        <p>• Innovation: Continuously advancing our technology to lead the field in oil regeneration. <br>
+                           • Quality: Ensuring each system we design and build meets the highest standards. <br>
+                           • Sustainability: Committed to eco-friendly solutions that minimize waste and promote long-term asset health. <br>
+                           • Expertise: Leveraging our founders’ extensive industry knowledge to provide clients with the best possible solutions. With Ecoregen as your trusted partner, experience the future of transformer oil regeneration—efficient, reliable, and sustainable.</p>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

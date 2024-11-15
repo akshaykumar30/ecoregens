@@ -1,0 +1,41 @@
+<div class="section-full small-device p-b40 top-half-section-outer">
+
+    <div class="container">
+    
+        <!-- IMAGE CAROUSEL START -->
+        <div class="section-content clearfix">
+            <div class="top-half-section">
+            
+                <div class="row d-flex justify-content-center">
+                
+                    <div class="col-lg-4 col-md-6 m-b50" *ngFor="let object of data">
+                        <div class="service-border-box">
+                            <div class="wt-box service-box-1 bg-white">
+                                
+                                <div class="service-box-title title-style-2 site-text-secondry">
+                                    <span  class="s-title-one">{{object.title}}</span>
+                                    <!-- <span  class="s-title-two">Gas Engineering</span>      -->
+                                </div>
+                                <div class="service-box-content">
+                                    <p>{{object.description}}</p>
+                                    <a routerLink="/{{object.pagelink}}" class="site-button-link">Read More</a>
+                                </div>
+                                <div class="wt-icon-box-wraper">
+                                    <div class="wt-icon-box-md site-bg-primary">
+                                        <span class="icon-cell text-white"><i class="{{object.icon}}"></i></span>
+                                    </div>
+                                    <div class="wt-icon-number"><span>{{object.serial}}</span></div>
+                                </div>                                            
+                                                                            
+                            </div>
+                        </div>
+                                                            
+                    </div>
+                                                                                                            
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</div>

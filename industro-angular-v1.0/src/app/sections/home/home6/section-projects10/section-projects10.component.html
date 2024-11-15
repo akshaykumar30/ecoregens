@@ -1,0 +1,50 @@
+<div class="section-full p-t80 p-b50  bg-no-repeat bg-bottom-right" style="background-image:url(assets/images/solar-icon/bg/1.png); background-color:#dff6fc;">
+                                                   
+
+    <div class="container">
+        <!-- TITLE START-->
+        <div class="section-head center wt-small-separator-outer text-center">
+            <div class="wt-small-separator site-text-primary">
+                <div  class="sep-leaf-left"></div>
+                <div>{{data.title}}</div>
+                <div  class="sep-leaf-right"></div>
+            </div>
+            <h2>{{data.subtitle}}</h2>
+        </div>
+        <!-- TITLE END--> 
+
+        <!-- PAGINATION START -->
+        <div class="filter-wrap work-grid p-b30 text-center">
+            <ul class="masonry-filter link-style ">
+                    <li class="active"><a data-filter="*" href="javascript:void(0);">All Cases</a></li>
+                    <li><a data-filter=".cat-1" href="javascript:void(0);">Solar</a></li>
+                    <li><a data-filter=".cat-2" href="javascript:void(0);">Ecosystem</a></li>
+                    <li><a data-filter=".cat-3" href="javascript:void(0);">Organic</a></li>
+                    <li><a data-filter=".cat-4" href="javascript:void(0);">Biology</a></li>
+                    <li><a data-filter=".cat-5" href="javascript:void(0);">Recycling</a></li>
+            </ul>
+        </div>
+        <!-- PAGINATION END -->
+        
+        <!-- GALLERY CONTENT START -->
+         <div class="masonry-wrap mfp-gallery  row clearfix d-flex justify-content-center flex-wrap">
+            <!-- COLUMNS 1 -->
+            <div *ngFor="let object of data.projects" class="masonry-item {{object.category}} col-lg-4 col-md-6 col-sm-6 m-b30">
+            
+                <div class="project-img-effect-1">
+                    <img src="{{object.image}}" alt="" />
+                    <div class="wt-info">
+                        <h3 class="wt-tilte m-b0 m-t0"><a routerLink="/projects/project-detail">{{object.title}}</a></h3>
+                    </div>
+                    <a href="{{object.detailImage}}" class="mfp-link"><i class="fa fa-search-plus"></i></a>
+                </div>                              
+                
+                                                                                 
+            </div>
+            
+         </div>
+        <!-- GALLERY CONTENT END --> 
+                                                                    
+   </div>
+
+</div>

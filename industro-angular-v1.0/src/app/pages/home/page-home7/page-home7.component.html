@@ -1,0 +1,61 @@
+<div class="page-wraper">
+                	
+    <!-- HEADER START -->
+    <app-section-header4></app-section-header4>
+    <!-- HEADER END -->
+    
+    <!-- CONTENT START -->
+    <div class="page-content">
+        <!-- SLIDER START --> 
+        <app-section-slider7></app-section-slider7>
+        <!-- SLIDER END -->
+        
+        <!--WELCOME SECTION-->
+        <app-section-welcome1 [data]="specifications"></app-section-welcome1>  
+        <!--WELCOME SECTION-->
+                         
+        <!-- WHAT WE DO SECTION START -->
+        <app-section-what-we-do3 [data]="whatWeDo"></app-section-what-we-do3>
+        <!-- WHAT WE DO SECTION END -->   
+
+        <!--WE PROVIDE ENERGY -->
+        <app-section-services5 [data]="services"></app-section-services5>
+        <!-- WE PROVIDE ENERGY -->  
+                  
+        <!--OUR PROJECTS SECTION START -->
+        <app-section-projects5 [data]="projects"></app-section-projects5>
+        <!-- OUR PROJECTS SECTION END -->              
+
+        <!-- VISION SECTION START -->
+        <app-section-vision2 [data]="vision"></app-section-vision2>
+        <!-- VISION SECTION END -->
+        
+        <!-- TESTIMONIAL SECTION START -->
+        <app-section-testimonials3 [data]="testimonials" whiteBox="1"></app-section-testimonials3>
+        <!-- TESTIMONIAL SECTION END -->  
+                    
+        <!-- OUR TEAM START -->
+        <app-section-team2 [data]="team" bgcover="0" grayBox="0"></app-section-team2>  
+        <!-- OUR TEAM SECTION END --> 
+        
+        <!-- COUNTER SECTION START -->
+        <app-section-counter2 [data]="counter" bgplain="1"></app-section-counter2>
+        <!-- COUNTER SECTION  SECTION END -->              
+        
+        <!-- OUR BLOG START -->
+        <app-section-blogs3 [data]="blogs" wide="0"></app-section-blogs3>  
+        <!-- OUR BLOG END -->
+        
+        <!-- CLIENT LOGO SECTION START -->
+        <app-section-clients1 [data]="clients"></app-section-clients1>
+        <!-- CLIENT LOGO  SECTION End -->                            
+    </div>
+    <!-- CONTENT END -->
+    
+    <!-- FOOTER START -->
+    <app-section-footer1></app-section-footer1>
+    <!-- FOOTER END -->
+
+ </div>
+
+<app-loader></app-loader>

@@ -1,0 +1,61 @@
+<div class="footer-fixed">
+    <div class="page-wraper"> 
+        
+        <!-- HEADER START -->
+        <app-section-header3></app-section-header3>
+        <!-- HEADER END -->
+        
+        <!-- CONTENT START -->
+        <div class="page-content">
+        
+            <!-- SLIDER START -->
+            <app-section-slider3></app-section-slider3>
+            <!-- SLIDER END -->
+            
+            <!-- PROJECTS SECTION START -->
+            <app-section-projects3 [data]="projects"></app-section-projects3>
+            <!-- PROJECTS SECTION  SECTION END -->             
+
+            <!-- TOP HALF SECTION START -->
+            <app-section-specifications2 [data]="specifications"></app-section-specifications2>
+            <!-- TOP HALF SECTION END -->
+            
+            <!-- VIDEO SECTION START -->
+            <app-section-video3 [data]="video"></app-section-video3>
+            <!-- VIDEO  SECTION END -->  
+            
+            <!-- OUR PLAN US START -->
+            <app-section-plans1 [data]="plans"></app-section-plans1>
+            <!-- OUR PLAN US SECTION END -->  
+                       
+            <!-- ABOUT SECTION START -->
+            <app-section-about2 [data]="about"></app-section-about2>  
+            <!-- ABOUT SECTION  SECTION END -->   
+  
+            <!-- COUNTER SECTION START -->
+            <app-section-counter1 [data]="counter"></app-section-counter1>
+            <!-- COUNTER SECTION END --> 
+                        
+ 			<!-- TESTIMONIAL SECTION START -->
+            <app-section-testimonials3 [data]="testimonials" whiteBox="1"></app-section-testimonials3>
+            <!-- TESTIMONIAL SECTION END -->  
+            
+            <!-- OUR BLOG START -->
+            <app-section-blogs1 [data]="blogs" wide="0"></app-section-blogs1>   
+            <!-- OUR BLOG END -->
+            
+            <!-- OUR TEAM START -->
+            <app-section-team2 [data]="team" bgcover="1" grayBox="0"></app-section-team2>   
+            <!-- OUR TEAM SECTION END -->       
+                         
+        </div>
+        <!-- CONTENT END -->
+        
+        <!-- FOOTER START -->
+        <app-section-footer2></app-section-footer2>
+        <!-- FOOTER END -->
+ 
+ 	</div>
+</div>
+
+<app-loader></app-loader>

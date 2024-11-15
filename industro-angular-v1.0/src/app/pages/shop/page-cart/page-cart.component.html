@@ -1,0 +1,42 @@
+<div class="page-wraper"> 
+    
+    <!-- HEADER START -->
+    <app-section-header2></app-section-header2>
+    <!-- HEADER END -->
+        
+    <!-- CONTENT START -->
+    <div class="page-content">
+        
+        <!-- INNER PAGE BANNER -->
+        <app-section-inner-banner [data]="banner"></app-section-inner-banner>
+        <!-- INNER PAGE BANNER END -->
+            
+
+            
+        <!-- OUR BEST SERVICES SECTION  START-->                  
+        <div class="section-full  p-t80 p-b80">
+            <div class="container">
+                
+                <div class="section-content">
+                
+                    <div class="left wt-small-separator-outer">
+                        <h2>Shopping Cart</h2>
+                    </div>                         
+                    
+                    <app-section-product-table id="no-more-tables" [data]="products" cart="1"></app-section-product-table>
+                </div>
+
+            </div>
+        </div>
+        <!-- OUR BEST SERVICES SECTION END -->
+               
+    </div>
+    <!-- CONTENT END -->
+    
+    <!-- FOOTER START -->
+    <app-section-footer1></app-section-footer1>
+    <!-- FOOTER END -->
+    
+</div>
+
+<app-loader></app-loader>

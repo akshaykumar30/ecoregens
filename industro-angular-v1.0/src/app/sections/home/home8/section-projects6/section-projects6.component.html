@@ -1,0 +1,50 @@
+<div class="section-full p-t80 p-b80 p-lr30 project-style-new site-bg-gray">
+
+    <div class="container">
+    
+        <div class="wt-separator-two-part">
+            <div class="row wt-separator-two-part-row">
+                <div class="col-xl-6 col-lg-12 col-md-12 wt-separator-two-part-left">
+                    <!-- TITLE START-->
+                    <div class="section-head left wt-small-separator-outer">
+                        <div class="wt-small-separator site-text-primary">
+                            <div  class="sep-leaf-left"></div>
+                            <div>{{data.title}}</div>
+                            <div  class="sep-leaf-right"></div>
+                        </div>
+                        <h2>{{data.subtitle}}</h2>
+                    </div>
+                    <!-- TITLE END-->
+                </div>
+                <div class="col-xl-6 col-lg-12 col-md-12 wt-separator-two-part-right text-right">
+                    <ul class="btn-filter-wrap">
+                        <li class="btn-filter btn-active" data-filter="*">All Project</li>
+                        <li class="btn-filter" data-filter=".cat-1">Oil & Gas</li>
+                        <li class="btn-filter" data-filter=".cat-2">Chemical</li>
+                        <li class="btn-filter" data-filter=".cat-3">Agriculture</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- IMAGE CAROUSEL START -->
+    <div class="section-content">
+        <div class="owl-carousel owl-carousel-filter  owl-btn-vertical-center">
+            <!-- COLUMNS 1 --> 
+            <div *ngFor="let object of data.projects" class="item {{object.category}}">
+                <div class="wt-img-effect project-new-1">
+                    <img src="{{object.image}}" alt="">
+                    <div class="project-new-content">
+                         <span class="project-new-category">{{object.title}}</span>	
+                       <h3 class="wt-title"><a routerLink="/projects/project-detail" class="site-text-secondry">{{object.subtitle}}</a></h3>
+                   </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+ </div> 

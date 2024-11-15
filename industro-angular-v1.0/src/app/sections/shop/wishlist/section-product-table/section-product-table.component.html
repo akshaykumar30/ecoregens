@@ -1,0 +1,44 @@
+<div id="no-more-tables">
+    <table class="table-bordered  table-condensed cf wt-responsive-table shopping-table text-left">
+        <thead class="cf bg-gray">
+            <tr>
+                <th>IMAGE</th>
+                <th>PRODUCT NAME</th>
+                <th class="numeric">UNIT PRICE</th>
+                <th class="numeric">STOCK STATUS</th>
+                <th class="numeric">TOTAL</th>
+                <th class="numeric">REMOVE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let object of data">
+                <td data-title="Code"><img src="{{object.image}}" alt=""></td>
+                <td data-title="Company">{{object.name}}</td>
+                <td data-title="Price" class="numeric">${{object.price}}</td>
+                <td data-title="Change" class="numeric">{{object.status}}</td>
+                <td data-title="Change %" class="numeric"><a routerLink="/products/shopping-cart" class="font-12 text-black">{{object.total}}</a></td>
+                <td data-title="Open" class="numeric"><a><i class="fa fa-times"></i></a></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div *ngIf="cart==1" class="cart-buttons text-right">
+        <a routerLink="/products/product" class="m-b15 site-button-secondry m-r15 text-uppercase button-sm">Update Cart</a>
+        <a routerLink="/products/product" class="m-b15 site-button text-uppercase button-sm">Continue Shopping</a>
+    </div>
+    <div *ngIf="cart==1" class="cart-total-table text-right">
+        <table class="table-bordered  table-condensed cf">
+            <thead class="cf bg-gray">
+                <tr>
+                    <th>TOTAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-title="Total"><b> $300.00</b></td>
+                </tr>
+            </tbody>
+        </table>
+    </div> 
+    
+</div>

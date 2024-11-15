@@ -1,0 +1,54 @@
+<div class="page-wraper">
+                	
+    <!-- HEADER START -->
+    <app-section-header5></app-section-header5>
+    <!-- HEADER END -->
+    
+    <!-- CONTENT START -->
+    <div class="page-content">
+        
+        <!-- SLIDER START --> 
+        <app-section-slider5></app-section-slider5>
+        <!-- SLIDER END -->
+                         
+        <!-- SERVICES SECTION START -->
+        <app-section-services3 [data]="services"></app-section-services3>
+        <!-- SERVICES SECTION  SECTION END -->  
+        
+        <!-- VIDEO SECTION START -->
+        <app-section-video1 [data]="video"></app-section-video1>  
+        <!-- VIDEO SECTION  SECTION END -->                 
+
+        <!-- ALL PROJECTS START -->
+        <app-section-projects4 [data]="projects"></app-section-projects4>
+        <!-- ALL PROJECTS SECTION END -->  
+
+        <!-- TESTIMONIAL SECTION START -->
+        <app-section-testimonials3 [data]="testimonials" whiteBox="1"></app-section-testimonials3>
+        <!-- TESTIMONIAL SECTION END --> 
+                     
+        <!-- OUR TEAM START -->
+        <app-section-team2 [data]="team" bgcover="0" grayBox="1"></app-section-team2>   
+        <!-- OUR TEAM SECTION END -->  
+         
+        <!-- SELF INTRO SECTION START -->
+        <app-section-self-intro1 [data]="selfIntro"></app-section-self-intro1>   
+        <!-- SELF INTRO SECTION  END -->    
+                    
+        <!-- OUR BLOG START -->
+        <app-section-blogs4 [data]="blogs"></app-section-blogs4>
+        <!-- OUR BLOG END -->
+   
+        <!-- CLIENT LOGO SECTION START -->
+        <app-section-clients1 [data]="clients"></app-section-clients1>
+        <!-- CLIENT LOGO  SECTION End -->                            
+    </div>
+    <!-- CONTENT END -->
+    
+    <!-- FOOTER START -->
+    <app-section-footer1></app-section-footer1>
+    <!-- FOOTER END -->
+
+ </div>
+
+<app-loader></app-loader>

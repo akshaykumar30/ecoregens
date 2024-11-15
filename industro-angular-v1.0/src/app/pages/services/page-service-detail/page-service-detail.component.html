@@ -1,0 +1,84 @@
+<div class="page-wraper"> 
+    
+    <!-- HEADER START -->
+    <app-section-header2></app-section-header2>
+    <!-- HEADER END -->
+    
+    <!-- CONTENT START -->
+    <div class="page-content">
+    
+        <!-- INNER PAGE BANNER -->
+        <app-section-inner-banner [data]="banner"></app-section-inner-banner>
+        <!-- INNER PAGE BANNER END -->
+
+        <!-- SERVICE DETAIL SECTION START -->
+        <div class="section-full small-device  p-t80 p-b50 bg-white">
+            <div class="section-content">
+                <div class="container">
+                    <div class="row">
+                    
+                        <div class="col-lg-4 col-md-12 rightSidebar">
+                            <div class="all_services">
+                                <ul>
+                                    <li><a routerLink="/services/services1">All Services</a></li>
+                                    <li><a routerLink="/services/s-oilgas" class="{{loadingurl == 's-oilgas' ? 'active' : ''}}">Oil & Gas Engineering</a></li>
+                                    <li><a routerLink="/services/s-automotive" class="{{loadingurl == 's-automotive' ? 'active' : ''}}">Automotive Manufacturing</a></li> 
+                                    <li><a routerLink="/services/s-chemical" class="{{loadingurl == 's-chemical' ? 'active' : ''}}">Chemical Research</a></li>
+                                    <li><a routerLink="/services/s-agricultural" class="{{loadingurl == 's-agricultural' ? 'active' : ''}}">Agricultural Automation</a></li>
+                                    <li><a routerLink="/services/s-mechanical" class="{{loadingurl == 's-mechanical' ? 'active' : ''}}">Mechanical Engineering</a></li>
+                                    <li><a routerLink="/services/s-civil" class="{{loadingurl == 's-civil' ? 'active' : ''}}">Civil Engineering</a></li>
+                                    <li><a routerLink="/services/s-power-energy" class="{{loadingurl == 's-power-energy' ? 'active' : ''}}">Power & Energy Sector</a></li>                                     
+                                </ul>
+                            </div> 
+                            
+                            <div class="service-side-btn m-b30 site-bg-secondry p-a20 text-white">
+                               <h2 class="wt-title">Brochures</h2>
+                                <p>View our 2021 financial prospectus brochure for an easy to read guide on all of the services offer.</p>
+                                
+                                
+                                <div class="wt-icon-box-wraper left ">
+                                    <a routerLink="/about/about1" class="btn-block  p-a15 m-tb10">
+                                        <span class="text-black m-r10"><i class="fa fa-file-pdf-o"></i></span>
+                                        <strong class="text-uppercase text-black">Download .PDF</strong>
+                                    </a>
+                                </div>
+                                <div class="wt-icon-box-wraper left">
+                                    <a routerLink="/about/about1" class="btn-block  p-a15 m-tb10">
+                                        <span class="text-black m-r10"><i class="fa fa-file-word-o"></i></span>
+                                        <strong class="text-uppercase text-black"> Download .DOC</strong>
+                                    </a>
+                                </div>
+                                <div class="wt-icon-box-wraper left">
+                                    <a routerLink="/about/about1" class="btn-block p-a15 m-t10">
+                                        <span class="text-black m-r10"><i class="fa fa-file-powerpoint-o"></i></span>
+                                        <strong class="text-uppercase text-black">Download .PPT</strong>
+                                    </a>
+                                </div>                                 
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-8 col-md-12">
+                            <app-page-s-agricultural *ngIf="loadingurl == 's-agricultural'"></app-page-s-agricultural>
+                            <app-page-s-automotive *ngIf="loadingurl == 's-automotive'"></app-page-s-automotive>
+                            <app-page-s-chemical *ngIf="loadingurl == 's-chemical'"></app-page-s-chemical>
+                            <app-page-s-civil *ngIf="loadingurl == 's-civil'"></app-page-s-civil>
+                            <app-page-s-mechanical *ngIf="loadingurl == 's-mechanical'"></app-page-s-mechanical>
+                            <app-page-s-oilgas *ngIf="loadingurl == 's-oilgas'"></app-page-s-oilgas>
+                            <app-page-s-power-energy *ngIf="loadingurl == 's-power-energy'"></app-page-s-power-energy>
+                        </div>
+                    </div>                            
+                </div>                                 
+            </div>
+        </div>   
+        <!-- SERVICE DETAIL SECTION END --> 
+        
+    </div>
+    <!-- CONTENT END -->
+    
+    <!-- FOOTER START -->
+    <app-section-footer1></app-section-footer1>
+    <!-- FOOTER END -->
+    
+</div>
+
+<app-loader></app-loader>

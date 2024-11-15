@@ -1,0 +1,118 @@
+<div class="page-wraper"> 
+    
+    <!-- HEADER START -->
+    <app-section-header2></app-section-header2>
+    <!-- HEADER END -->
+    
+    <!-- CONTENT START -->
+    <div class="page-content">
+    
+        <!-- INNER PAGE BANNER -->
+        <app-section-inner-banner [data]="banner"></app-section-inner-banner>
+        <!-- INNER PAGE BANNER END -->
+
+        <!-- OUR BLOG START -->
+        <div class="section-full  p-t80 p-b50 bg-white">
+            <div class="container">
+            
+                <!-- BLOG SECTION START -->
+                <div class="section-content">
+                    <div class="row d-flex justify-content-center">
+                    
+                        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+                            <!--Block one-->
+                            <div class="blog-post date-style-2 blog-without-image">
+                                <div class="wt-post-info bg-white">
+                                    <div class="wt-post-meta ">
+                                        <ul>
+                                            <li class="post-category"><span>{{blogs.withoutImage.field}}</span> </li>
+                                            <li class="post-date">{{blogs.withoutImage.date}}</li>
+                                            <li class="post-comment">{{blogs.withoutImage.comments}} Comment</li>
+                                        </ul>
+                                    </div>                                  
+                                    <div class="wt-post-title ">
+                                        <h3 class="post-title"><a routerLink="/blog/blog-post-right-sidebar" class="site-text-secondry">{{blogs.withoutImage.title}}</a></h3>
+                                    </div>
+                                    <div class="wt-post-readmore ">
+                                        <a routerLink="/blog/blog-post-right-sidebar" class="site-button-link black">Read More</a>
+                                    </div>
+                                </div>                                
+                            </div>
+
+                            <!--Block two-->
+                            <app-element-blog-box1 *ngFor="let object of blogs.others" [object]="object" titleLink="1"></app-element-blog-box1>
+                            
+                        </div> 
+                        
+                        <!-- SIDE BAR START -->
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 rightSidebar  m-b30">
+                        
+                            <aside  class="side-bar">
+                                
+                                   <!-- SEARCH -->
+                                   <div class="widget p-a20">
+                                        <div class="search-bx">
+                                            <form role="search" method="post">
+                                                <div class="input-group">
+                                                    <input name="news-letter" type="text" class="form-control" placeholder="Write your text">
+                                                    <span class="input-group-btn">
+                                                        <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+                                                    </span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    
+                                   <!-- RECENT POSTS -->
+                                   <app-section-recent-posts [data]="recent"></app-section-recent-posts>
+                                    
+                                   <!-- Archives -->   
+                                   <app-section-archives [data]="archives"></app-section-archives>                                          
+                                    
+                                   <!-- CATEGORY -->   
+                                   <app-section-categories [data]="categories"></app-section-categories>                                               
+                                                                            
+                                   <!-- TAGS -->
+                                   <app-section-tags [data]="tags"></app-section-tags>
+                                    
+                                   <!-- Social -->
+                                   <div class="widget p-a20">
+                                        <div class="widget_social_inks">
+                                            <ul class="social-icons social-square social-darkest social-md">
+                                                <li><a href="https://www.facebook.com/" class="fa fa-facebook"></a></li>
+                                                <li><a href="https://twitter.com/" class="fa fa-twitter"></a></li>
+                                                <li><a href="https://www.linkedin.com/" class="fa fa-linkedin"></a></li>
+                                                <li><a href="https://rss.com/" class="fa fa-rss"></a></li>
+                                                <li><a href="https://www.youtube.com/" class="fa fa-youtube"></a></li>
+                                                <li><a href="https://www.instagram.com/" class="fa fa-instagram"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>                                          
+                              
+                               </aside>
+    
+                        </div>
+                        <!-- SIDE BAR END -->                           
+
+                                                    
+                    </div>
+                    
+                    
+                                               
+                </div>
+                
+            </div>
+            
+         </div>   
+        <!-- OUR BLOG END -->
+           
+    </div>
+    <!-- CONTENT END -->
+    
+    <!-- FOOTER START -->
+    <app-section-footer1></app-section-footer1>
+    <!-- FOOTER END -->
+    
+</div>
+
+<app-loader></app-loader>

@@ -1,0 +1,36 @@
+<div class="section-full p-t80 p-b80 overlay-wraper  bg-cover" style="background-image:url({{data.bgImage}})">
+    <div class="overlay-main bg-black opacity-07"></div>
+    <div class="container">
+        <!-- TITLE START-->
+        <div class="section-head center wt-small-separator-outer text-white">
+            <div class="wt-small-separator site-text-primary">
+                <div class="sep-leaf-left"></div>
+                <div>{{data.title}}</div>
+                <div class="sep-leaf-right"></div>
+            </div>
+            <h2>{{data.subtitle}}</h2>
+        </div>
+        <!-- TITLE END-->
+    </div> 
+                           
+    <div class="section-content container-fluid"> 
+    
+        <div class="owl-carousel gallery-slider owl-btn-vertical-center mfp-gallery">
+        
+            <div class="item" *ngFor="let object of data.cases">
+                <div class="project-img-effect-1">
+                    <img src="{{object.image}}" alt="" />
+                    <div class="wt-info">
+                        <h3 class="wt-tilte m-b10 m-t0">{{object.title}}</h3>
+                        <p>High Performance Services For Multiple Insdustries And Technologies!</p>
+                        <a routerLink="/projects/project-detail" class="site-button-link">Read More</a>
+                    </div>
+                   <a href="{{object.image}}" class="mfp-link"><i class="fa fa-search-plus"></i></a>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>                                        
+
+</div> 

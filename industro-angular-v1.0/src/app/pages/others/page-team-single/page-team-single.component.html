@@ -1,0 +1,139 @@
+<div class="page-wraper"> 
+    
+    <!-- HEADER START -->
+    <app-section-header2></app-section-header2>
+    <!-- HEADER END -->
+    
+    <!-- CONTENT START -->
+    <div class="page-content">
+    
+        <!-- INNER PAGE BANNER -->
+        <app-section-inner-banner [data]="banner"></app-section-inner-banner>
+        <!-- INNER PAGE BANNER END -->
+        
+        <!-- OUR TEAM SINGLE SECTION START -->
+        <div class="section-full p-t80 p-b50 bg-gray">
+            <div class="container">
+                <div class="section-content">
+                           
+                        <div class="section-content">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-4 col-md-4 m-b30">
+                                    <div class="wt-team-1">
+                                        
+                                        <div class="wt-media">
+                                            <img src="{{about.image}}" alt="">
+                                            <div class="team-social-center">
+                                                <ul class="team-social-bar">
+                                                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                                                    <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                                                    <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                                                    <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+                                                </ul>
+                                                
+                                            </div>                                              
+                                        </div>                                   
+    
+                                        <div class="wt-info p-a30  p-b0">
+                                            <div class="team-detail  text-center">
+                                                <h3 class="m-t0 team-name"><a class="site-text-secondry">{{about.name}}</a></h3>
+                                                <span class="title-style-2 team-position site-text-primary">{{about.speciality}}</span>
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-8 m-b30">
+                                    <div class="wt-team-1-single">
+                                        <h3 class="m-t0">About Me</h3>
+                                        <p>{{about.description}}</p>
+                                        <ul class="wt-team-1-single-info bg-white">
+                                            <li><span>Position</span><span>{{about.position}}</span></li>
+                                            <li><span>Level</span><span>{{about.level}}</span></li>
+                                            <li><span>Experience</span><span>{{about.experience}}</span></li>
+                                            <li><span>Phone</span><span>{{about.phone}}</span></li>
+                                            <li><span>Email</span><span>{{about.email}}</span></li>
+                                        </ul> 
+                                        
+                                    </div>
+                                </div>
+                                       
+                            </div>
+                        </div>      
+                    
+                </div>
+            </div>
+        </div>
+        <!-- OUR TEAM SINGLE SECTION END --> 
+    
+        <div class="section-full p-t80 p-b50 bg-white">
+            <div class="container">
+                <div class="section-content">
+                        <div class="section-content">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-lg-8 col-md-12 col-sm-12">
+                                    <div class="home-contact-section site-bg-primary m-b30 p-a40">
+                                        <form class="cons-contact-form" method="post" action="../../../handlers/form-handler2.php">
+                                        
+                                            <!-- TITLE START-->
+                                            <div class="wt-small-separator-outer text-white">
+                                                <h2>Feel free to get in touch!</h2>
+                                            </div>
+                                            <!-- TITLE END-->
+                                                                                    
+                                            <div class="row">
+                                            <div class="col-md-6 col-sm-6">
+                                                    <div class="form-group">
+                                                        <input name="username" type="text" required class="form-control" placeholder="Name">
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6">
+                                                    <div class="form-group">
+                                                    <input name="email" type="text" class="form-control" required placeholder="Email">
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6">
+                                                    <div class="form-group">
+                                                        <input name="phone" type="text" class="form-control" required placeholder="Phone">
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-sm-6">
+                                                    <div class="form-group">
+                                                        <input name="subject" type="text" class="form-control" required placeholder="Subject">
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                    <textarea name="message" class="form-control" rows="4" placeholder="Message"></textarea>
+                                                    </div>
+                                                </div>
+                                                
+                                            <div class="col-md-12">
+                                                    <button type="submit" class="site-button-secondry site-btn-effect">Send us a message</button>
+                                                </div>
+                                                
+                                            </div>
+                                    </form>                                        
+                                    </div>
+                                            
+                                </div>
+                            </div>
+                        </div>      
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- CONTENT END -->
+    
+    <!-- FOOTER START -->
+    <app-section-footer1></app-section-footer1>
+    <!-- FOOTER END -->
+    
+</div>
+
+<app-loader></app-loader>

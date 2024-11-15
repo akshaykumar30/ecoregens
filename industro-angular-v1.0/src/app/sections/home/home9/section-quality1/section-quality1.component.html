@@ -1,0 +1,47 @@
+<div class="section-full p-t80 overlay-wraper bg-top-center bg-center" style="background-image:url(assets/images/ui-9/background/bg-1.jpg)">
+    <div class="overlay-main bg-black opacity-01"></div>
+    <div class="container">
+        <!-- TITLE START-->
+        <div class="section-head center wt-small-separator-outer text-center text-white">
+            <div class="wt-small-separator site-text-white">
+                <div  class="sep-leaf-left"></div>
+                <div>{{data.title}}</div>
+                <div  class="sep-leaf-right"></div>
+            </div>
+            <h2>{{data.subtitle}}</h2>
+        </div>
+        <!-- TITLE END-->
+    </div>  
+                
+    <div class="section-content quality-section-outer bg-gray-light" style="background-image:url(assets/images/background/bg-map.png)">
+        <div class="container">
+            <div class="quality-section-content">
+
+                <div class="counter-outer">
+                    <div class="row justify-content-center">
+                                
+                        <div class="col-lg-3 col-md-6 col-sm-6 m-b30" *ngFor="let object of data.counters">
+                            <div class="wt-icon-box-wraper center bg-gray-light p-a20">
+                                <h2 class="counter site-text-primary m-b0">{{object.count}}</h2>
+                                <span class="site-text-secondry title-style-2">{{object.title}}</span>
+                            </div>
+                        </div>                                        
+
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="quality-video-section">
+                <span>{{data.description}}</span>
+                <div class="quality-video">
+                    <a href="{{data.videoLink}}" class="mfp-video play-now">
+                        <i class="icon fa fa-play"></i>
+                        <span class="ripple"></span>
+                    </a>                                  
+                </div>
+            </div>
+
+        </div>
+    </div>      
+</div> 

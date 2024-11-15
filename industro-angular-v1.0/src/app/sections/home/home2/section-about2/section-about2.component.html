@@ -1,0 +1,41 @@
+<div class="section-full welcome-section-outer">
+    <div class="welcome-section-top bg-white p-t80 p-b50">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+            
+                <div class="col-lg-6 col-md-12 m-b30">
+                    <div class="welcom-to-section">
+                        <!-- TITLE START-->
+                        <div class="left wt-small-separator-outer">
+                            <div class="wt-small-separator site-text-primary">
+                                <div  class="sep-leaf-left"></div>
+                                <div>{{data.title}}</div>
+                                <div  class="sep-leaf-right"></div>
+                            </div>
+                        </div>
+                        <h2>{{data.subtitle}}</h2>
+                        <!-- TITLE END-->
+                        <ul class="site-list-style-one">
+                            <li *ngFor="let object of data.services">{{object.value}}</li>
+                        </ul>
+                        
+                        <p>{{data.description}}</p> 
+                        
+                        <div class="welcom-to-section-bottom d-flex justify-content-between">
+                            <div class="welcom-btn-position"><a routerLink="/about/about2" class="site-button-secondry site-btn-effect">More About</a></div>
+                        </div>   
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-md-12 m-b30">
+                    <div class="img-colarge2">
+                        <div class="colarge-2 slide-right"><img src="{{data.image1}}" alt=""></div>
+                        <div class="colarge-2-1"><img src="{{data.image2}}" alt=""></div>
+                        <div class="since-year-outer2"><div class="since-year2"><span>Since</span><strong>{{data.since}}</strong></div></div>
+                    </div>
+                </div>                              
+
+            </div>
+        </div> 
+    </div>
+</div> 

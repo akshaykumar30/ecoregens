@@ -1,0 +1,53 @@
+<div class="section-full p-t80 p-b50  overlay-wraper bg-cover bg-no-repeat" style="background-image:url({{data.bgImage}});">
+    <div *ngIf="overlay==1" class="overlay-main site-bg-secondry opacity-07"></div>                                       
+
+            <div class="container">
+                <!-- TITLE START-->
+                <div class="section-head center wt-small-separator-outer text-center {{overlay==1 ? 'text-white' : ''}}">
+                    <div class="wt-small-separator site-text-primary">
+                        <div  class="sep-leaf-left"></div>
+                        <div>{{data.title}}</div>
+                        <div  class="sep-leaf-right"></div>
+                    </div>
+                    <h2>{{data.subtitle}}</h2>
+                </div>
+                <!-- TITLE END--> 
+
+            <div class="section-content">
+
+                <div class="masonry-wrap row mfp-gallery project-stamp clearfix d-flex justify-content-center">
+                    <!-- COLUMNS 1 -->
+                    <div class="stamp col-xl-3 col-lg-4 col-md-6 col-sm-12 m-b30">
+                        <div class="project-stamp-list bg-white">
+                            <div class="filter-wrap">
+                                <ul class="filter-navigation masonry-filter text-uppercase">
+                                    <li class="active"><a data-filter="*" data-hover="All" href="javascript:void(0);"><i class="flaticon-layers"></i>All Cases</a></li>
+                                    <li><a data-filter=".cat-1" href="javascript:void(0);"><i class="flaticon-oil"></i>Oil & Gas</a></li>
+                                    <li><a data-filter=".cat-2" href="javascript:void(0);"><i class="flaticon-helmet"></i>Construction</a></li>
+                                    <li><a data-filter=".cat-3" href="javascript:void(0);"><i class="flaticon-healthcare-and-medical"></i>Chemical </a></li>
+                                    <li><a data-filter=".cat-4" href="javascript:void(0);"><i class="flaticon-conveyor"></i>Industrial</a></li>
+                                    <li><a data-filter=".cat-5" href="javascript:void(0);"><i class="flaticon-scythe"></i>Agriculture</a></li>
+                                </ul>
+                            </div>                          
+                        </div>            
+                    </div>
+                    <!-- COLUMNS 2 -->
+                    <div *ngFor="let object of data.projects" class="masonry-item {{object.category}} col-xl-3 col-lg-4 col-md-6 col-sm-12 m-b30">
+                        <div class="wt-box bg-white  p-a10 project-2-block">
+                            <div class="wt-thum-bx">
+                                <img src="{{object.image}}" alt="">
+                            </div>
+                            <div class="wt-info">
+                                <h4 class="wt-title m-b0 m-t15"><a routerLink="/{{object.pagelink}}">{{object.title}}</a></h4>
+                            </div>
+                
+                        </div>
+                    </div>
+                                                
+                </div>
+
+            </div>
+                                                                            
+        </div>
+
+        </div>

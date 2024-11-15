@@ -1,0 +1,71 @@
+<div class="section-full video3-counter-section p-t80 bg-gray-light">
+                                                   
+
+    <div class="container">
+        <!-- TITLE START-->
+        <div class="section-head center wt-small-separator-outer text-center">
+            <div class="wt-small-separator site-text-primary">
+                <div  class="sep-leaf-left"></div>
+                <div>{{data.title}}</div>
+                <div  class="sep-leaf-right"></div>
+            </div>
+            <h2>{{data.subtitle}}</h2>
+        </div>
+        <!-- TITLE END--> 
+
+        <div class="counter3-section-outer-top">
+   
+                
+                <div class="row justify-content-center">
+                        
+                    <div class="col-lg-4 col-md-5  col-sm-6 col-6">
+                        <div class="video3-left-section">
+                            <div class="wt-media"><img src="{{data.image}}" alt=""></div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-8 col-md-12">
+                    
+                        <div class="video-section-new-outer mfp-gallery">
+                            <div class="video-section">
+                                <img src="{{data.videoThumb}}" alt="">
+                                 <a href="{{data.videoLink}}" class="mfp-video play-now">
+                                    <i class="icon fa fa-play"></i>
+                                    <span class="ripple"></span>
+                                </a>                                              
+                            </div>
+                            <div class="video-new-info site-bg-secondry">
+                                <span class="site-text-primary">{{data.thumbTitle}}</span>
+                                <h3 class="wt-tilte">{{data.thumbSubtitle}}</h3>
+                            </div>	    
+                        </div>   
+                        
+
+                            <div class="counter3-outer">                            
+                                
+                                <div class="row justify-content-center">
+                                        
+                                    <div class="col-lg-4 col-md-6 col-sm-6 m-b30" *ngFor="let object of data.counters">
+                                        <div class="wt-icon-box-wraper center">
+                                            <h2 class="counter site-text-primary">{{object.count}}</h2>
+                                            <span class="site-text-secondry title-style-2">{{object.title}}</span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>                            
+                            
+                            </div>   
+                                                                  
+                        
+                        
+                    </div>
+                    
+                    
+
+                </div>                            
+
+        </div>  
+                                                                    
+   </div>
+
+</div>

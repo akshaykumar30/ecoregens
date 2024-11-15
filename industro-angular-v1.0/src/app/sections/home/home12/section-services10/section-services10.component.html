@@ -1,0 +1,67 @@
+<div class="section-full p-t80 p-b50 service-gallery-style12-wrapper">
+            
+    <div class="services-gallery-block-outer">
+        <div class="container">
+            <!-- TITLE START-->
+            <div class="section-head left wt-small-separator-outer">
+                <div class="wt-small-separator site-text-primary">
+                    <div>{{data.title}}</div>
+                </div>
+                <h2 class="wt-title">{{data.subtitle}}</h2>
+            </div>
+            <!-- TITLE END-->
+        </div>
+
+        <div class="container">
+            <div class="services-tabs">
+                <ul class="sr-btn-filter-wrap">
+
+                    <li class="sr-btn-filter" data-filter=".cooling-list">
+                        <img src="assets/images/home-11/air-cooling.png">
+                        <span class="wt-tilte cool-text">Cooling</span>
+                    </li>
+
+                    <li class="sr-btn-filter btn-active sr-btn-circle" data-filter="*">All</li>
+
+                    <li class="sr-btn-filter" data-filter=".heating-list">
+                        <img src="assets/images/home-11/air-heat.png">
+                        <span class="wt-tilte heat-text">Heating</span>
+                    </li>
+
+                </ul>
+            </div>
+        </div>                        
+
+        <div class="container-fluid  services-tabs-content">
+            <div class="services-gallery-style12">
+                <div class="owl-carousel service_button_filter owl-btn-vertical-center ">
+                
+                    <!-- COLUMNS 1 --> 
+                    <div class="item cooling-list" *ngFor="let object of data.cooling">
+                        <div class="service-box-style12">
+                            <div class="service-media">
+                                <img src="{{object.image}}" alt="">
+                            </div>
+                            <div class="service-content">
+                                <h3 class="service-title-large"><a routerLink="/services/service-detail">{{object.title}}</a></h3>
+                            </div>
+                        </div>
+                    </div>
+   
+                    <!-- COLUMNS 1 --> 
+                    <div class="item heating-list" *ngFor="let object of data.heating">
+                        <div class="service-box-style12">
+                            <div class="service-media">
+                                <img src="{{object.image}}" alt="">
+                            </div>
+                            <div class="service-content">
+                                <h3 class="service-title-large"><a routerLink="/services/service-detail">{{object.title}}</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>                              
+    </div>
+</div>

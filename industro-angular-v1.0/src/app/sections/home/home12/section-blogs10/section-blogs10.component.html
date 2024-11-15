@@ -1,0 +1,53 @@
+<div class="section-full  p-t80 p-b50 bg-white">
+            
+    <div class="container">
+
+        <div class="wt-separator-two-part">
+            <div class="row wt-separator-two-part-row">
+                <div class="col-lg-8 col-md-7 wt-separator-two-part-left">
+                    <!-- TITLE START-->
+                    <div class="section-head left wt-small-separator-outer">
+                        <div class="wt-small-separator site-text-primary">
+                            <div>{{data.title}}</div>
+                        </div>
+                        <h2>{{data.subtitle}}</h2>
+                    </div>
+                    <!-- TITLE END-->
+                </div>
+                <div class="col-lg-4 col-md-5 wt-separator-two-part-right text-right">
+                    <a routerLink="/blog/blog-grid" class="site-button site-btn-effect">More Detail</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- BLOG SECTION START -->
+        <div class="section-content">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let object of data.blogs">
+                    <!--Block one-->
+                    <div class="blog-post post-style-12">
+                        <div class="wt-post-media wt-img-effect zoom-slow">
+                            <a routerLink="/blog/blog-post-right-sidebar"><img src="{{object.image}}" alt=""></a>
+                        </div>
+                        <div class="wt-post-info text-center">
+                            <div class="wt-post-content">
+                                <div class="wt-post-meta ">
+                                    <ul>
+                                        <li class="post-date"><span>{{object.date}}</span> </li>
+                                        <li class="post-user"><a routerLink="/blog/blog-post-right-sidebar"> By {{object.author}}</a> </li>
+                                    </ul>
+                                </div>                                 
+                                <div class="wt-post-title ">
+                                    <h3 class="post-title"><a routerLink="/blog/blog-post-right-sidebar">{{object.title}}</a></h3>
+                                </div>
+                            </div>
+                        </div>                                
+                    </div>
+                </div>
+                                  
+            </div>
+        </div> 
+
+    </div>
+
+</div>

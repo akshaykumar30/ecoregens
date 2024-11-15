@@ -1,0 +1,49 @@
+<div class="section-full p-t80 p-b50 bg-white what-we-do-section2-new">
+            
+    <div class="container">                      
+        <div class="section-content what-we-do-content-new">
+            <div class="row d-flex justify-content-center flex-wrap">
+                <div class="col-lg-6 col-md-12 m-b30">
+                    <div class="whatWedo-media-section-new">
+                        <div class="wt-media">
+                            <img src="{{data.image}}" alt="">
+                        </div>
+                        <div class="whatWedo-media-content-new text-white">
+                            <div class="whatWedo-media-inner-new site-bg-primary">
+                                <h3>{{data.experience.title}}</h3>
+                                <p>{{data.experience.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                                   
+                <div class="col-lg-6 col-md-12 m-b40">
+                    <div class="whatWedo-info-section-new">
+                        <!-- TITLE START-->
+                        <div class="left wt-small-separator-outer">
+                            <div class="wt-small-separator site-text-primary">
+                                <div  class="sep-leaf-left"></div>
+                                <div>{{data.title}}</div>
+                                <div  class="sep-leaf-right"></div>
+                            </div>
+                            <h2>{{data.subtitle}}</h2>
+                            <p>{{data.description}}</p>
+                            
+                        </div>
+                        <!-- TITLE END-->
+                        <div class="wt-icon-card-outer-new">
+                        <div class="wt-icon-card-new bg-gray-light" *ngFor="let object of data.work">
+                            <div class="wt-card-header-new"><i class="{{object.icon}} site-text-primary"></i><span class="title-style-2 site-text-secondry">{{object.title}}</span></div>
+                            <div class="wt-card-content-new"><p>{{object.description}}</p></div>
+                        </div>
+                        </div>
+                                                            
+                    </div>                        
+                </div> 
+            
+
+            </div>
+        </div>                                        
+    </div>
+    
+</div>

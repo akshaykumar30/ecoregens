@@ -1,0 +1,51 @@
+<div class="page-wraper"> 
+    
+    <!-- HEADER START -->
+    <app-section-header2></app-section-header2>
+    <!-- HEADER END -->
+    
+    <!-- CONTENT START -->
+    <div class="page-content">
+    
+        <!-- INNER PAGE BANNER -->
+        <app-section-inner-banner [data]="banner"></app-section-inner-banner>
+        <!-- INNER PAGE BANNER END -->
+
+        <!-- OUR BLOG START -->
+        <div class="section-full  p-t80 p-b50 bg-white ">
+            <div class="container">
+            
+                <!-- BLOG SECTION START -->
+                <div class="section-content">
+                    <div class="row d-flex justify-content-center">
+                        <!--Block one-->
+                        <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let object of blogs">
+                            <app-element-blog-box1 [object]="object" titleLink="0"></app-element-blog-box1>
+                        </div>                            
+                    </div>
+                    
+                    <ul class="pagination m-b0 p-b0">
+                      <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+                      <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+                      <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                      <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                      <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+                    </ul>
+                                               
+                </div>
+                
+            </div>
+            
+         </div>   
+        <!-- OUR BLOG END -->
+           
+    </div>
+    <!-- CONTENT END -->
+    
+    <!-- FOOTER START -->
+    <app-section-footer1></app-section-footer1>
+    <!-- FOOTER END -->
+    
+</div>
+
+<app-loader></app-loader>

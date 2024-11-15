@@ -1,0 +1,42 @@
+<div class="section-full p-t90 p-b50 bg-gray">
+                    
+    <div class="container">
+
+        <!-- TITLE START-->
+        <div class="section-head center  wt-small-separator-outer">
+            <div class="wt-small-separator site-text-primary">
+                <div>{{data.title}}</div>
+            </div>
+            <h2 class="wt-title">{{data.subtitle}}</h2>
+        </div>
+        <!-- TITLE END-->
+
+        <div class="s-section">
+            <div class="row">
+                <!-- COLUMNS 1 --> 
+                <div class="col-lg-3 col-md-6  col-sm-6 m-b30" *ngFor="let object of data.work">
+                    <div class="service-icon-box-three shadow-bx text-center">
+                    
+                        <div class="wt-icon-box-wraper circle-bg  scale-up-center">
+                            <div class="icon-lg inline-icon">
+                                <span class="icon-cell"><img src="{{object.image}}"></span>
+                            </div>
+                        </div>
+                                
+                        <div class="service-icon-box-title">
+                            <h4 class="wt-title"><a routerLink="/services/service-detail">{{object.title}}</a></h4>
+                        </div>
+                        
+                        <div class="service-icon-box-content">
+                            <p>{{object.description}}</p>
+                            <a routerLink="/services/service-detail" class="site-button-link site-text-primary">Read More</a>
+                        </div>
+                                                                    
+                    </div>
+                </div>
+
+            </div>
+        </div>                  
+    </div>
+
+</div> 

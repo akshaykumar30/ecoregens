@@ -1,0 +1,38 @@
+<div class="section-full  p-t80 p-b50 bg-white  bg-bottom-right bg-no-repeat" style="background-image:url(assets/images/background/bg-5.png)">
+    <div class="container">
+
+            <!-- TITLE START-->
+            <div class="section-head center wt-small-separator-outer">
+                <div class="wt-small-separator site-text-primary">
+                    <div  class="sep-leaf-left"></div>
+                    <div>{{data.title}}</div>
+                    <div  class="sep-leaf-right"></div>
+                </div>
+                <h2>{{data.subtitle}}</h2>
+                
+            </div>
+            <!-- TITLE END-->                
+    
+            <div class="row d-flex justify-content-center">
+            
+                <div class="col-lg-4 col-md-6 animate_line" *ngFor="let object of data.services">
+                    <div class="service-border-box3 shadow text-center">
+                        <div class="wt-icon-box-wraper bg-white p-tb50 p-lr20">
+                            <div class="icon-lg inline-icon	 m-b50">
+                                <img src="{{object.image}}" alt="">
+                            </div>
+                            <div class="icon-content">
+                                <h3 class="wt-tilte m-b20">{{object.title}}</h3>
+                                <p>{{object.description}}</p>
+                                <a routerLink="/products/product-detail" class="site-button-link">More Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                                                        
+                </div>                                                                                   
+                                                                                                          
+            </div>
+            
+    </div>
+    
+</div>
