@@ -20,26 +20,26 @@ export class PageAbout1Component implements OnInit {
 
   about = {
     title: "Welcome to Ecoregen",
-    subtitle: "We Are Here to Increase Your Knowledge With Experience",
+    subtitle: "",
     image1: "assets/images/colarge/s2.jpg",
     since: "",
     description: " Ecoregen is a pioneering force in transformer oil regeneration and advanced equipment design. Our founders bring unmatched expertise in the field, specializing in the regeneration of transformer oil and the creation of high-efficiency regeneration systems.",
     services: [
       {
-        value: "Quality Control System , 100% Satisfaction Guarantee"
+        value: ""
       },
       {
-        value: "Unrivalled Workmanship, Professional and Qualified"
+        value: ""
       },
       {
-        value: "Environmental Sensitivity, Personalised Solutions"
+        value: ""
       }
     ]
   }
 
   services = {
     title: "The Best Industry services",
-    subtitle: "High Performance Services For Multiple Insdustries And Technologies!",
+    subtitle: "High Performance Services For Multiple Industries And Technologies!",
     description: "Progressively maintain extensive infomediaries via extensible niches. Capitalize on low hanging fruit to identify a ballpark value added is activity to beta test. Override the igital divide with additional click throughs from fruit to identify a ballpark value added.",
     services: [
       {
@@ -133,7 +133,7 @@ export class PageAbout1Component implements OnInit {
       title: "The Best Solution For all industries",
       subtitle: "Seving an impressive list of long-term clients with experience and expertise in industries.",
       quote: " What sets Ecoregen apart is our dedication to research, development, and precision engineering.",
-      quoteby: "Prabha Sankar, CEO"
+      quoteby: "Prabha Sankar"
     }
   }
 
@@ -144,7 +144,7 @@ export class PageAbout1Component implements OnInit {
     members: [
       {
         image: "assets/images/team/smitha.jpg",
-        name: "Paul Hodgson",
+        name: "Paul James",
         post: ""
       },{
         image: "assets/images/team/pic1.jpg",

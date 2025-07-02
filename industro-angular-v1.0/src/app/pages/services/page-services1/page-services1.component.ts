@@ -20,7 +20,7 @@ export class PageServices1Component implements OnInit {
 
   services = {
     title: "The Best Industry services",
-    subtitle: "High Performance Services For Multiple Insdustries And Technologies!",
+    subtitle: "High Performance Services For Multiple Industries And Technologies!",
     description: "Progressively maintain extensive infomediaries via extensible niches. Capitalize on low hanging fruit to identify a ballpark value added is activity to beta test. Override the igital divide with additional click throughs from fruit to identify a ballpark value added.",
     services: [
       {
@@ -81,7 +81,7 @@ export class PageServices1Component implements OnInit {
       // }
     ]
   }
-  
+
   plans = [
     {
       price: "29",
